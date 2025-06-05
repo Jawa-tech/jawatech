@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pemasangan WiFi Cepat & Terpercaya</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="logo-icon me-2">🌐</span> Jawa - Tech
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero with Video Background -->
+  <section class="hero d-flex justify-content-center text-center position-relative overflow-hidden" id="hero">
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="bg.mp4" type="video/webm">
+      Browser tidak mendukung video.
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Konten -->
+    <div class="container d-flex flex-wrap align-items-center justify-content-center gap-5 text-white text-center text-md-start" data-aos="fade-up" style="position: relative; z-index: 1; max-width: 1000px;">
+      <div>
+        <h1 class="display-4 fw-bold">Pasang WiFi Cepat & Mudah</h1>
+        <p class="lead">Layanan internet rumah dan kantor dengan harga terjangkau dan proses cepat.</p>
+        <a href="#pricing" class="btn btn-warning btn-lg mt-4">Lihat Paket</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Diskon Slider -->
+  <section class="promo-slider">
+    <div class="container-fluid">
+      <div class="slider-track">
+        <div class="slider-item">🔥 Diskon 20% untuk pelanggan baru!</div>
+        <div class="slider-item">🎉 Gratis instalasi hingga akhir bulan ini!</div>
+        <div class="slider-item">🚀 Nikmati kecepatan hingga 100 Mbps!</div>
+        <div class="slider-item">💰 Paket hemat mulai Rp199.000/bulan!</div>
+        <div class="slider-item">🔥 Diskon 20% untuk pelanggan baru!</div>
+        <div class="slider-item">🎉 Gratis instalasi hingga akhir bulan ini!</div>
+        <div class="slider-item">🚀 Nikmati kecepatan hingga 100 Mbps!</div>
+        <div class="slider-item">💰 Paket hemat mulai Rp199.000/bulan!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4" data-aos="fade-down">Kenapa Memilih Kami?</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon mb-3">⚡</div>
+          <h5>Instalasi Cepat</h5>
+          <p>Pemasangan dalam hitungan jam setelah pemesanan.</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon mb-3">📞</div>
+          <h5>Dukungan 24/7</h5>
+          <p>Tim kami siap membantu kapan saja, di mana saja.</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon mb-3">💰</div>
+          <h5>Harga Terjangkau</h5>
+          <p>Paket sesuai kebutuhan dan budget Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4" data-aos="fade-down">Paket Internet</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pricing-card p-4">
+            <h4>Paket Basic</h4>
+            <p class="text-center">Up to 20 Mbps</p>
+            <h3 class="fw-bold">Rp199.000/bulan</h3>
+            <ul class="list-unstyled">
+              <li>Gratis Instalasi</li>
+              <li>Router Disediakan</li>
+              <li>Support 24/7</li>
+            </ul>
+            <a href="#" class="btn btn-outline-warning">Daftar Sekarang</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-card p-4 border border-warning">
+            <h4>Paket Pro</h4>
+            <p class="text-center">Up to 50 Mbps</p>
+            <h3 class="fw-bold">Rp299.000/bulan</h3>
+            <ul class="list-unstyled">
+              <li>Gratis Instalasi</li>
+              <li>Router Dual Band</li>
+              <li>Support 24/7</li>
+            </ul>
+            <a href="#" class="btn btn-warning">Daftar Sekarang</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="pricing-card p-4">
+            <h4>Paket Ultimate</h4>
+            <p class="text-center">Up to 100 Mbps</p>
+            <h3 class="fw-bold">Rp499.000/bulan</h3>
+            <ul class="list-unstyled">
+              <li>Gratis Instalasi</li>
+              <li>Router Dual Band</li>
+              <li>IP Publik Static</li>
+            </ul>
+            <a href="#" class="btn btn-outline-warning">Daftar Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4" data-aos="fade-down">Apa Kata Mereka?</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm p-3">
+            <p class="mb-3">💬 “Proses pemasangannya cepat banget, besoknya langsung aktif! Internet stabil dan support-nya responsif.”</p>
+            <h6 class="fw-bold mb-0">Rina A.</h6>
+            <small class="text-center">Jakarta</small>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm p-3">
+            <p class="mb-3">💬 “Harga paketnya terjangkau dan cocok untuk kerja remote. Highly recommended!”</p>
+            <h6 class="fw-bold mb-0">Andi S.</h6>
+            <small class="text-center">Bandung</small>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm p-3">
+            <p class="mb-3">💬 “Saya suka karena pelayanannya ramah dan teknisinya datang tepat waktu.”</p>
+            <h6 class="fw-bold mb-0">Siti M.</h6>
+            <small class="text-center">Surabaya</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container" data-aos="fade-up">
+      <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+      <p>📧 <a href="mailto:blueskyy331@gmail.com">blueskyy331</a></p>
+      <p>📞 <a href="tel:+62123456789">+62 812-9865-2799</a></p>
+      <p>📍 Jl. Lkr. Utara No.8, Perwira, Kec. Bekasi Utara, Kota Bks, Jawa Barat 17124</p>
+      <a href="https://wa.me/6281298652799" class="btn btn-success mt-3" target="_blank">Chat WhatsApp Kami</a>
+ 
+      <!-- Google Maps -->
+    <div class="map-responsive mt-4 rounded shadow">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.895452840405!2d107.00309563796655!3d-6.204519659098728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698951a1c56c9f%3A0xba614a42161711ad!2sBSI%20Square%20Kaliabang!5e0!3m2!1sen!2sid!4v1749050792090!5m2!1sen!2sid"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Jawa-Tech. All rights reserved.</p>
+      <p>
+        📧 <a href="mailto:blueskyy331@gmail.com">blueskyy331@gmail.com</a> |
+        📞 <a href="tel:+6281298652799">+62 812-9865-2799</a> |
+        📍 Jl. Lkr. Utara No.8, Perwira, Kec. Bekasi Utara, Kota Bks, Jawa Barat 17124
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
