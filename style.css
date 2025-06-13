@@ -1,0 +1,505 @@
+/* ====================
+   General Styles
+==================== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #fff200;
+}
+
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+.navbar .nav-link {
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffd700;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+}
+/* ====================
+   Promo Slider
+==================== */
+.promo-slider {
+  background-color: #ffce00;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.75rem 0;
+}
+
+.slider-track {
+  display: inline-block;
+  animation: scrollLoop 25s linear infinite;
+}
+
+.slider-item {
+  display: inline-block;
+  margin-right: 3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+@keyframes scrollLoop {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/* ====================
+   Hero Section
+==================== */
+.hero {
+  height: 100vh;
+  padding: 100px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+/* ====================
+   Section Titles
+==================== */
+.section-title {
+  font-size: 2.5rem;
+  color: #ffd700;
+  position: relative;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ffd700;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(255, 215, 0, 0.4);
+}
+
+/* ====================
+   Text Elements
+==================== */
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+label {
+  color: #e0e0e0;
+}
+
+.text-muted {
+  color: #aaa !important;
+}
+
+/* ====================
+   Features Section
+==================== */
+.feature-icon {
+  font-size: 3rem;
+  color: #ffce00;
+  transition: transform 0.3s ease;
+}
+.feature-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.col-md-4 .text-center {
+  background-color: #111;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 206, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.col-md-4 .text-center:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(255, 206, 0, 0.2);
+}
+
+/* === Pricing Section === */
+#pricing {
+  background-color: #000;
+  color: #000;
+  padding: 80px 0;
+  color: #fff
+}
+
+#pricing h2 {
+  color: #ffce00;
+  font-weight: bold;
+}
+
+#pricing p {
+  color: #000;
+}
+
+/* Card Styling */
+.pricing-section .card {
+  background-color: #111;
+  border: 2px solid #ffce00;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 20px;
+}
+
+.pricing-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 206, 0, 0.3);
+}
+
+.pricing-section .card-title {
+  color: #ffce00 !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pricing-section .text-muted {
+  color: #bbb !important;
+}
+
+.pricing-section .card ul li {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.pricing-section h4 {
+  color: #ffce00;
+}
+
+.pricing-section .btn {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Override Bootstrap color buttons to match yellow-black theme */
+.pricing-section .btn-outline-primary,
+.pricing-section .btn-success,
+.pricing-section .btn-danger,
+.pricing-section .btn-warning,
+.pricing-section .btn-dark {
+  background-color: transparent;
+  border: 2px solid #ffce00;
+  color: #ffce00;
+}
+
+.pricing-section .btn:hover {
+  background-color: #ffce00;
+  color: #000;
+}
+
+/* Scroll animation (optional if using AOS) */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ====================
+   Testimonials
+==================== */
+#testimonials {
+  background-color: #111;
+  color: #fff;
+}
+
+#testimonials .card {
+  background-color: #222;
+  border: 2px solid #ffce00;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+#testimonials .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 206, 0, 0.3);
+}
+
+#testimonials p {
+  font-style: italic;
+  color: #f8e473;
+}
+
+#testimonials h6,
+#testimonials small {
+  color: #ffce00;
+}
+
+/* ====================
+   Buttons
+==================== */
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #e6ac00;
+  color: #000;
+  box-shadow: 0 0 8px rgba(255, 206, 0, 0.6);
+}
+.btn-outline-warning {
+  border-color: #ffce00;
+  color: #ffce00;
+}
+.btn-outline-warning:hover {
+  background-color: #ffce00;
+  color: #000;
+}
+
+/* ====================
+   Footer
+==================== */
+footer {
+  background-color: #111;
+  color: #eee;
+}
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====================
+   Map Responsive
+==================== */
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ====================
+   Animation on Scroll (AOS-like)
+==================== */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====================
+   Responsive Tweaks
+==================== */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+/* Form Ulasan */
+.review-form {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 30px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 206, 0, 0.2);
+}
+
+.review-form h4 {
+  color: #ffce00;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.review-form .form-control {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.review-form .form-control:focus {
+  border-color: #ffce00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25);
+}
+
+.review-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #f8f8f8;
+}
+
+.review-form .btn-warning {
+  background-color: #ffce00;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.review-form .btn-warning:hover {
+  background-color: #e6b800;
+  color: #000;
+}
+#wifi-info {
+  background: linear-gradient(135deg, #111 0%, #000 100%);
+  color: #fff;
+  padding: 60px 0;
+}
+
+#wifi-info h2.section-title {
+  color: #ffce00;
+  font-weight: 700;
+  position: relative;
+}
+
+#wifi-info h4,
+#wifi-info h5 {
+  color: #ffce00;
+}
+
+#wifi-info p {
+  color: #ccc;
+}
+
+#wifi-info ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #eee;
+}
+
+#wifi-info img {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 193, 7, 0.15);
+}
+#wifi-trend {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+#wifi-trend h2.section-title {
+  color: #ffce00;
+}
+
+#wifi-trend h4 {
+  color: #ffce00;
+  font-weight: 600;
+}
+
+#wifi-trend ul li {
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+#wifi-trend img {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 193, 7, 0.15);
+}
+/* Tambahan Floating WhatsApp Button */
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.floating-wa img {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease;
+}
+.floating-wa img:hover {
+  transform: scale(1.1);
+}
+
+/* FAQ Section */
+#faq {
+  background: #111;
+  color: #f5f5f5;
+  padding: 60px 0;
+}
+#faq .accordion-button {
+  background-color: #222;
+  color: #ffd700;
+  font-weight: 500;
+}
+#faq .accordion-button:not(.collapsed) {
+  background-color: #333;
+  color: #fff;
+}
+#faq .accordion-body {
+  background-color: #1a1a1a;
+  color: #ccc;
+  border-top: 1px solid #444;
+}
+
+/* Link dan Hover */
+a {
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #fff200;
+}
